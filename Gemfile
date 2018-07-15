@@ -23,10 +23,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Use slim templating for faster html page loading
 gem "slim-rails"
+# Use materialize for view beautification according to google material design
+gem 'materialize-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Use Rspec for unit testing
+  gem 'rspec-rails', '~> 3.7'
+  # Use dotenv for managing environment variables
+  gem 'dotenv-rails'
 end
 
 group :development do
