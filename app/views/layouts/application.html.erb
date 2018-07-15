@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <%= image_tag 'logo.svg' %>
+          <%# <img src="/logo.svg" alt="Goboony logo" height="42" width="42"> %>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Sass</a></li>
+          <li><a href="#">Components</a></li>
+        </ul>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

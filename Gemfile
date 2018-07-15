@@ -33,6 +33,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   # Use dotenv for managing environment variables
   gem 'dotenv-rails'
+  # Use faker to create seed for db and test data for testing
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 end
 
 group :development do
