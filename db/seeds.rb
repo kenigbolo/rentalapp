@@ -11,7 +11,8 @@
     listing = Listing.create(
         title: Faker::Vehicle.make_and_model + " " + Faker::Vehicle.year.to_s,
         default_daily_rate: Faker::Number.decimal(2).to_d,
-        image_url: Faker::Avatar.image("my-own-slug")
+        image_url: Faker::Avatar.image("my-own-slug"),
+        available: Faker::Boolean.boolean
     )
     listing.seasonal_rates.create(
         start_date: Faker::Date.between(2.days.ago, Date.today),

@@ -1,3 +1,5 @@
+h3.center Search Results
+
 .row
   - @listings.each do |listing|
     .col.s3.m3
@@ -7,12 +9,13 @@
         .card-content
           span.card-title
             = listing.title
+          span 
+            = @listing_service.start_date 
+            |   to    
+            = @listing_service.end_date
           p
-            | Price: 
-            = listing.default_daily_rate
-          p
-            | Availability:   
-            = availability(listing)
+            | Total Rental Price: $
+            = @listing_service.calculate_price(listing)
 .row.center
   .col.s4.offset-s4
     .digg_pagination

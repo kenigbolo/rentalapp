@@ -24,7 +24,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use slim templating for faster html page loading
 gem "slim-rails"
 # Use materialize for view beautification according to google material design
-gem 'materialize-sass'
+# gem 'materialize-sass'
+# Use jquery rails gem
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -35,6 +37,8 @@ group :development, :test do
   gem 'dotenv-rails'
   # Use faker to create seed for db and test data for testing
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  # Use will paginate for page pagination
+  gem 'will_paginate', '~> 3.1.0'
 end
 
 group :development do

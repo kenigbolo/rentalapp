@@ -4,7 +4,8 @@
     <title>Rentalapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -14,7 +15,6 @@
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">
           <%= image_tag 'logo.svg' %>
-          <%# <img src="/logo.svg" alt="Goboony logo" height="42" width="42"> %>
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Sass</a></li>
@@ -22,6 +22,12 @@
         </ul>
       </div>
     </nav>
+    <br><br>
+    <%= render partial: "shared/search" %>
+    <br><br>
     <%= yield %>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.22.2/min/moment.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,11 @@
+.row
+  = form_for :search, url: "/search", html: {id: "search__form"} do |form|
+    .col.s2.offset-s3
+      input#search_start_date.datepicker[name="search[start_date]" type="text" required]
+    .col.s2
+      input#search_end_date.datepicker[name="search[end_date]" type="text" required]
+    .col.s2
+      button.btn.waves-effect.waves-light#search-btn[type="submit" name="action"]
+        | Search 
+        i.material-icons.right
+          | send
