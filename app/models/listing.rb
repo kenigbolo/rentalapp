@@ -1,6 +1,6 @@
 class Listing < ApplicationRecord
     # Association
-    has_many :seasonal_rates
+    has_one :seasonal_rate
     # Validations
     validates :title, :default_daily_rate, :image_url, :available, presence: true
     validates :default_daily_rate, numericality: true

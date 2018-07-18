@@ -17,8 +17,6 @@
   .col.s4.offset-s4
     .digg_pagination
       = will_paginate @listings, :container => false
-.row.center
-  = link_to 'New Listing', new_listing_path
 
 script
   |  $('.datepicker').datepicker(); 

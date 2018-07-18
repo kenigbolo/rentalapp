@@ -1,15 +1,18 @@
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the ListingsHelper. For example:
-#
-# describe ListingsHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
 RSpec.describe ListingsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before(:all) do
+    @listing = create(:listing)
+  end
+
+  context `It checks availability` do
+    it 'returns yes when availability is true' do
+      expect(helper.availability(@listing)).to eq('Yes')
+    end
+
+    it 'returns no when availability is false' do
+      @listing.available = false
+      expect(helper.availability(@listing)).to eq('No')
+    end
+  end
 end

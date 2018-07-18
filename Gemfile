@@ -27,6 +27,8 @@ gem "slim-rails"
 # gem 'materialize-sass'
 # Use jquery rails gem
 gem 'jquery-rails'
+# Use rubocop for rails
+gem 'rubocop', '~> 0.56.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,6 +41,8 @@ group :development, :test do
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   # Use will paginate for page pagination
   gem 'will_paginate', '~> 3.1.0'
+  # Factory bot for test suite
+  gem 'factory_bot'
 end
 
 group :development do
