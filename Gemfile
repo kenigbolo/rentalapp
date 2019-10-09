@@ -40,7 +40,7 @@ group :development, :test do
   # Use faker to create seed for db and test data for testing
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   # Use will paginate for page pagination
-  gem 'will_paginate', '~> 3.1.8'
+  gem 'will_paginate', '~> 3.2.0'
   # Factory bot for test suite
   gem 'factory_bot'
 end
