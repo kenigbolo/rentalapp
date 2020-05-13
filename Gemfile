@@ -28,7 +28,7 @@ gem "slim-rails"
 # Use jquery rails gem
 gem 'jquery-rails'
 # Use rubocop for rails
-gem 'rubocop', '~> 0.82.0', require: false
+gem 'rubocop', '~> 0.83.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
